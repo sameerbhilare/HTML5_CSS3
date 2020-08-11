@@ -11,6 +11,10 @@ Now all the relevant properties are prefixed.
 /*---------------------------------------------------*/
 /* BASIC SETUP */
 /*---------------------------------------------------*/
+/* UNIVERSAL SELECTOR RESET - 
+ * By default, browsers apply a certain margin, and/or a certain padding, to some elements. 
+ * And we don't want that, obviously for consistency.    
+ */
 * {
     margin: 0;
     padding: 0;
@@ -228,7 +232,7 @@ header {
     More details- https://www.w3schools.com/cssref/func_linear-gradient.asp
     */
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/hero-min.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-min.jpg); /* using complressed and optimized image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-min.jpg); /* using compressed and optimized image. Sequence does matter here. We want the background to stay on top. */
     background-size: cover; /* to cover whole viewport area so that whole image can be seen */
     background-position: center;
     background-attachment: fixed;  /* background image just stays and doesn't have scrolling effect */
